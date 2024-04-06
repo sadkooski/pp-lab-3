@@ -1,38 +1,14 @@
 
-class Point {
-    
-    private double x;
-    private double y;
-
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
-}
-
-
+import geometry.Point;
+import geometry.ColoredCircle;
 public class Main {
     public static void main(String[] args) {
-        Point point = new Point(2.5, 4.0);
+        Point center = new Point(2.5, 4.0);
+        ColoredCircle coloredCircle = new ColoredCircle(center, 3.5, "blue");
 
-        System.out.println("Współrzędne punktu:");
-        System.out.println("x = " + point.getX());
-        System.out.println("y = " + point.getY());
+        System.out.println("Właściwości kolorowego koła:");
+        System.out.println("Środek koła: (" + coloredCircle.getCenter().getX() + ", " + coloredCircle.getCenter().getY() + ")");
+        System.out.println("Promień koła: " + coloredCircle.getRadius());
+        System.out.println("Kolor koła: " + coloredCircle.getColor());
     } 
 }
