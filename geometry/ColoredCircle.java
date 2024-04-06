@@ -16,7 +16,4 @@ public class ColoredCircle extends Circle {
         this.color = color;
     }
 
-    public Point getCenter() {
-        return super.getCenter();
-    }
 }

@@ -7,8 +7,6 @@ public class Main {
         ColoredCircle coloredCircle = new ColoredCircle(center, 3.5, "blue");
 
         System.out.println("Właściwości kolorowego koła:");
-        System.out.println("Środek koła: (" + coloredCircle.getCenter().getX() + ", " + coloredCircle.getCenter().getY() + ")");
-        System.out.println("Promień koła: " + coloredCircle.getRadius());
         System.out.println("Kolor koła: " + coloredCircle.getColor());
     } 
 }
