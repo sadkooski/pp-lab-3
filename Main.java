@@ -10,5 +10,6 @@ public class Main {
         System.out.println("Środek koła: (" + circle.getCenter().getX() + ", " + circle.getCenter().getY() + ")");
         System.out.println("Promień koła: " + circle.getRadius());
         System.out.println("Obwód koła: " + circle.calculatePerimeter());
+        System.out.println("Pole koła: " + circle.getArea());
     } 
 }
