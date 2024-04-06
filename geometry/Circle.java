@@ -9,6 +9,10 @@ public class Circle {
         this.radius = radius;
     }
 
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+
     public Point getCenter() {
         return center;
     }
